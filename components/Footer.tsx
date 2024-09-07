@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <nav className="flex-between background-light900_dark200 fixed bottom-0 w-full border-t-2 border-gray-200 p-2 shadow-light-400 dark:border-gray-800 dark:shadow-none sm:px-12">
+    <nav className="flex-center md:flex-between background-light900_dark200 fixed bottom-0 w-full border-t-2 border-gray-200 p-2 shadow-light-400 dark:border-gray-800 dark:shadow-none sm:px-12">
       <div className="flex items-center gap-1">
         <p className="font-spaceGrotesk text-sm italic text-dark-100 dark:text-light-900 max-sm:hidden">
           @2024 No rights reserved

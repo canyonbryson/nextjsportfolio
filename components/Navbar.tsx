@@ -14,7 +14,7 @@ const Navbar = () => {
           alt="DevFlow"
         />
 
-        <p className="h2-bold font-spaceGrotesk text-dark-100 dark:text-light-900 max-sm:hidden">
+        <p className="h2-bold font-spaceGrotesk text-dark-100 dark:text-light-900 max-sm:text-sm">
           Canyon Bryson&apos;s{" "}
           <span className="text-primary-500">Portfolio</span>
         </p>

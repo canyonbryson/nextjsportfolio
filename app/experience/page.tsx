@@ -6,7 +6,7 @@ const cardClasses =
 export default function Experience() {
   return (
     <div className="flex flex-col items-center p-2">
-      <div className="flex flex-row items-center gap-12">
+      <div className="flex flex-row flex-wrap items-center gap-12">
         <Image
           src="/assets/images/usu.jpeg"
           className="rounded-full"

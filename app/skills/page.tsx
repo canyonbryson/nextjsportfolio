@@ -42,6 +42,7 @@ export default function Skills() {
         <div className={cardClasses}>
           <p>Deployment</p>
           <p className="text-lg font-normal">AWS</p>
+          <p className="text-lg font-normal">Vercel</p>
         </div>
         <div className={cardClasses}>
           <p>Architectures</p>
