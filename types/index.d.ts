@@ -4,6 +4,9 @@ export interface SidebarLink {
   imgURL: string;
   route: string;
   label: string;
+  invert?: boolean;
+  width?: number;
+  height?: number;
 }
 
 export interface Job {

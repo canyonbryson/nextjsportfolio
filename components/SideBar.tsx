@@ -29,12 +29,12 @@ const Sidebar = () => {
               <Image
                 src={item.imgURL}
                 alt={item.label}
-                width={20}
-                height={20}
+                width={item.width ?? 20}
+                height={item.height ?? 20}
                 className={`${isActive ? "" : "invert-colors"}`}
               />
               <p
-                className={`${isActive ? "base-bold" : "base-medium"} max-lg:hidden`}
+                className={`${item.label === "Projects" ? "" : "pl-[5px]"} ${isActive ? "base-bold" : "base-medium"} max-lg:hidden`}
               >
                 {item.label}
               </p>

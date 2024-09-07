@@ -97,7 +97,7 @@ export async function createQuestion(params: CreateQuestionParams) {
 
     revalidatePath(path);
   } catch (error) {
-    console.log(error);
+    throw new Error("Failed to create question");
   }
 }
 
@@ -136,7 +136,7 @@ export async function deleteQuestion(params: DeleteQuestionParams) {
 
     revalidatePath(path);
   } catch (error) {
-    console.log(error);
+    throw new Error("Failed to delete question");
   }
 }
 
@@ -159,6 +159,6 @@ export async function editQuestion(params: EditQuestionParams) {
 
     revalidatePath(path);
   } catch (error) {
-    console.log(error);
+    throw new Error("Failed to edit question");
   }
 }

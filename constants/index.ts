@@ -13,9 +13,11 @@ export const sidebarLinks: SidebarLink[] = [
     label: "Home",
   },
   {
-    imgURL: "/assets/icons/search.svg",
+    imgURL: "/assets/icons/projects.svg",
     route: "/projects",
     label: "Projects",
+    width: 25,
+    height: 25,
   },
   {
     imgURL: "/assets/icons/suitcase.svg",
@@ -28,19 +30,25 @@ export const sidebarLinks: SidebarLink[] = [
     label: "Skills",
   },
   {
-    imgURL: "/assets/icons/location.svg",
+    imgURL: "/assets/icons/education.svg",
     route: "/education",
     label: "Education",
+    width: 20,
+    height: 20,
   },
   {
-    imgURL: "/assets/icons/gold-medal.svg",
-    route: "/awards",
-    label: "Awards",
+    imgURL: "/assets/icons/user.svg",
+    route: "/about",
+    label: "About",
+    width: 20,
+    height: 20,
   },
   {
-    imgURL: "/assets/icons/question.svg",
+    imgURL: "/assets/icons/message.svg",
     route: "/contact",
     label: "Message Me",
+    width: 20,
+    height: 20,
   },
 ];
 

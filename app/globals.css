@@ -21,6 +21,10 @@ body {
     @apply flex justify-start items-center;
   }
 
+  .flex-end {
+    @apply flex justify-end items-center;
+  }
+
   .flex-between-center {
     @apply flex justify-between items-center;
   }
