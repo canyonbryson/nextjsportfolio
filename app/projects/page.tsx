@@ -42,6 +42,24 @@ export default function Projects() {
             />
           </div>
         </Link>
+        <Link href={"https://nextjs-technical-blog.vercel.app/"} className={cardClasses}>
+          <p>Technical Blog</p>
+          <p className="self-start text-start text-sm italic">
+            Next.js + Mardown + Vercel
+          </p>
+          <p className="text-lg font-normal">
+            Technical Blog following my learning progression.
+          </p>
+          <div className="mt-2 flex w-full items-center justify-center align-middle">
+            <Image
+              src="/assets/images/blog.png"
+              width={300}
+              height={300}
+              alt="useswiftcode.com"
+            />
+          </div>
+        </Link>
+        {/*  */}
         <div className={cardClasses}>
           <p>NFT Marketplace</p>
           <p className="self-start text-start text-sm italic">TBD</p>
