@@ -33,15 +33,25 @@ export default function Home() {
           <p className="font-bold">Top Skills</p>
           <p>React/Next.js in Typescript, TailwindCSS, AWS, DynamoDB</p>
         </Link>
-        <Link href={"/projects"} className={cardClasses}>
-          <p className="font-bold">Personal Project 1</p>
-          <p>www.useSwiftCode.com</p>
-          <p>Custom AI Assistant Builder + Chatbot + Operations Automator</p>
+        <Link href={"https://www.useswiftcode.com"} className={cardClasses}>
+          <p className="font-bold">Personal Project: AI Builder</p>
+          <p className="self-start text-start text-sm italic">
+            Astro + Solidjs, SST, Typescript
+          </p>
+          <p>Custom AI Assistant Builder + Chatbot + Automator</p>
         </Link>
-        <Link href={"/projects"} className={cardClasses}>
-          <p className="font-bold">Personal Project 2</p>
-          <p>https://nextjs-technical-blog.vercel.app/</p>
-          <p>Personal Technical Blog</p>
+        <Link
+          href={"https://dex-swap-pied.vercel.app/"}
+          className={cardClasses}
+        >
+          <p className="font-bold">Personal Project: DEX Swap</p>
+          <p className="self-start text-start text-sm italic">
+            Next.js, Typescript
+          </p>
+          <p className="text-lg font-normal">
+            Connect your coinbase wallet and exchange one cryptocurrency for
+            another.
+          </p>
         </Link>
       </div>
     </div>

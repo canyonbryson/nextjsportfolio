@@ -64,7 +64,7 @@ export default function Projects() {
         </Link>
         {/*  */}
         <Link
-          href={"https://github.com/canyonbryson/DEX_Swap"}
+          href={"https://dex-swap-pied.vercel.app/"}
           className={cardClasses}
         >
           <p>DEX Swap</p>
@@ -74,9 +74,6 @@ export default function Projects() {
           <p className="text-lg font-normal">
             Connect your coinbase wallet and exchange one cryptocurrency for
             another.
-          </p>
-          <p className="text-lg font-normal">
-            View the code on Github (Site not deployed).
           </p>
         </Link>
         <div className={cardClasses}>
