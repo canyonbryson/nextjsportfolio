@@ -42,7 +42,10 @@ export default function Projects() {
             />
           </div>
         </Link>
-        <Link href={"https://nextjs-technical-blog.vercel.app/"} className={cardClasses}>
+        <Link
+          href={"https://nextjs-technical-blog.vercel.app/"}
+          className={cardClasses}
+        >
           <p>Technical Blog</p>
           <p className="self-start text-start text-sm italic">
             Next.js + Mardown + Vercel
@@ -60,11 +63,22 @@ export default function Projects() {
           </div>
         </Link>
         {/*  */}
-        <div className={cardClasses}>
-          <p>NFT Marketplace</p>
-          <p className="self-start text-start text-sm italic">TBD</p>
-          <p className="text-lg font-normal">In Development</p>
-        </div>
+        <Link
+          href={"https://github.com/canyonbryson/DEX_Swap"}
+          className={cardClasses}
+        >
+          <p>DEX Swap</p>
+          <p className="self-start text-start text-sm italic">
+            React, Express, Typescript
+          </p>
+          <p className="text-lg font-normal">
+            Connect your coinbase wallet and exchange one cryptocurrency for
+            another.
+          </p>
+          <p className="text-lg font-normal">
+            View the code on Github (Site not deployed).
+          </p>
+        </Link>
         <div className={cardClasses}>
           <p>ML Number Detector</p>
           <p className="self-start text-start text-sm italic">TBD</p>

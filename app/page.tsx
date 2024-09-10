@@ -40,8 +40,8 @@ export default function Home() {
         </Link>
         <Link href={"/projects"} className={cardClasses}>
           <p className="font-bold">Personal Project 2</p>
-          <p>www.useSwiftCode.com</p>
-          <p>Custom AI Assistant Builder + Chatbot + Operations Automator</p>
+          <p>https://nextjs-technical-blog.vercel.app/</p>
+          <p>Personal Technical Blog</p>
         </Link>
       </div>
     </div>
