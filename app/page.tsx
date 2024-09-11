@@ -60,8 +60,8 @@ export default function Home() {
           <Spline scene="https://prod.spline.design/RwYhjBfvJE1VmqcF/scene.splinecode" />
         </div>
       </div> */}
-      <div className="fixed z-[5] size-4/5 bg-white opacity-25 dark:bg-black"></div>
-      <div className="fixed z-0 size-4/5">
+      <div className="fixed z-[5] size-full bg-white opacity-25 dark:bg-black"></div>
+      <div className="fixed z-0 size-full">
         <div className="absolute z-0 size-full">
           <Spline scene="https://prod.spline.design/RwYhjBfvJE1VmqcF/scene.splinecode" />
         </div>

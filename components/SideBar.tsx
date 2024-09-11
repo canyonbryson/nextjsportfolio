@@ -9,7 +9,7 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <section className="background-light800_dark300 light-border custom-scrollbar sticky left-0 top-0 flex h-screen flex-col justify-between overflow-y-auto border-r p-6 pt-36 shadow-light-300 dark:shadow-none max-sm:hidden lg:w-[266px]">
+    <section className="background-light800_dark300 light-border custom-scrollbar sticky left-0 top-0 z-20 flex h-screen flex-col justify-between overflow-y-auto border-r p-6 pt-36 shadow-light-300 dark:shadow-none max-sm:hidden lg:w-[266px]">
       <div className="flex flex-1 flex-col gap-6">
         {sidebarLinks.map((item) => {
           const isActive =
@@ -34,7 +34,9 @@ const Sidebar = () => {
                 className={`${isActive ? "" : "invert-colors"}`}
               />
               <p
-                className={`${item.label === "Projects" ? "" : "pl-[5px]"} ${isActive ? "base-bold" : "base-medium"} max-lg:hidden`}
+                className={`${item.label === "Projects" ? "" : "pl-[5px]"} ${
+                  isActive ? "base-bold" : "base-medium"
+                } max-lg:hidden`}
               >
                 {item.label}
               </p>
