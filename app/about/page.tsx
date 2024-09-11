@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const cardClasses =
-  "background-light800_dark300 max-w-80 h-80 text-dark300_light700 body-regular mt-4 rounded-lg border border-light-700 p-3 text-center text-2xl dark:border-dark-400 max-sm:mx-0 max-sm:text-left";
+  "background-light750_dark300 max-w-80 h-80 text-dark300_light700 body-regular mt-4 rounded-lg border border-light-700 p-3 text-center text-2xl dark:border-dark-400 max-sm:mx-0 max-sm:text-left";
 
 export default function About() {
   return (

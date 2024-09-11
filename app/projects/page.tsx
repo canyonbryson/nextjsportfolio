@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Projects() {
   const cardClasses =
-    "background-light800_dark300 hover:cursor-pointer hover:border-black hover:dark:border-white w-80 min-h-48 text-dark300_light700 body-regular mt-5 rounded-lg border border-light-700 p-4 text-center text-2xl dark:border-dark-400 max-sm:mx-0 max-sm:text-left";
+    "background-light750_dark300 hover:cursor-pointer hover:border-black hover:dark:border-white w-80 min-h-48 text-dark300_light700 body-regular mt-5 rounded-lg border border-light-700 p-4 text-center text-2xl dark:border-dark-400 max-sm:mx-0 max-sm:text-left";
   return (
     <div className="flex flex-col items-center p-2">
       <h1 className="text-dark100_light900 h1-bold mt-10">Personal Projects</h1>

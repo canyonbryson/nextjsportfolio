@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const cardClasses =
-  "background-light800_dark300 text-dark300_light700 body-regular mt-5 rounded-lg border border-light-700 p-4 text-center text-2xl dark:border-dark-400 max-sm:mx-0 max-sm:text-left";
+  "background-light750_dark300 text-dark300_light700 body-regular mt-5 rounded-lg border border-light-700 p-4 text-center text-2xl dark:border-dark-400 max-sm:mx-0 max-sm:text-left";
 
 export default function Education() {
   return (
