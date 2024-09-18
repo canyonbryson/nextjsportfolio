@@ -76,11 +76,17 @@ export default function Projects() {
             another.
           </p>
         </Link>
-        <div className={cardClasses}>
-          <p>ML Number Detector</p>
-          <p className="self-start text-start text-sm italic">TBD</p>
-          <p className="text-lg font-normal">In Development</p>
-        </div>
+        <Link href={"https://ml.useswiftcode.com/"} className={cardClasses}>
+          {" "}
+          <p>ML Shakespeare Generator</p>
+          <p className="self-start text-start text-sm italic">
+            Astro + Solidjs, python
+          </p>
+          <p className="text-lg font-normal">
+            Custom-made ML model that speaks like shakespeare. Functional, but
+            improvements are still in progress.
+          </p>
+        </Link>
         <div className={cardClasses}>
           <p>BluJay</p>
           <p className="self-start text-start text-sm italic">
