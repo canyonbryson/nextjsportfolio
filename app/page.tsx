@@ -37,6 +37,17 @@ export default function Home() {
           <p className="font-bold">Top Skills</p>
           <p>React/Next.js in Typescript, TailwindCSS, AWS, DynamoDB</p>
         </Link>
+        <Link href={"https://ml.useswiftcode.com/"} className={cardClasses}>
+          {" "}
+          <p className="font-bold">Personal Project: Shakespeare ML Model</p>
+          <p className="self-start text-start text-sm italic">
+            Astro + Solidjs, Python3 + PyTorch for training
+          </p>
+          <p className="text-lg font-normal">
+            Custom-made ML model that speaks like shakespeare. Shows each step
+            of the training process.
+          </p>
+        </Link>
         <Link href={"https://www.useswiftcode.com"} className={cardClasses}>
           <p className="font-bold">Personal Project: AI Builder</p>
           <p className="self-start text-start text-sm italic">
@@ -54,7 +65,7 @@ export default function Home() {
           </p>
           <p>Connect your coinbase wallet and exchange cryptocurrencies.</p>
         </Link>
-        {/* <Link
+        <Link
           href={"https://nextjs-technical-blog.vercel.app/"}
           className={cardClasses}
         >
@@ -63,7 +74,7 @@ export default function Home() {
             Next.js, Markdown, Typescript
           </p>
           <p>Technical Blog following my learning progression.</p>
-        </Link> */}
+        </Link>
       </div>
       <div className="fixed z-[5] size-full bg-white opacity-35 dark:bg-black"></div>
       <div className="fixed z-0 size-full">

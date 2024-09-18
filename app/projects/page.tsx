@@ -25,6 +25,17 @@ export default function Projects() {
             />
           </div>
         </div>
+        <Link href={"https://ml.useswiftcode.com/"} className={cardClasses}>
+          {" "}
+          <p>ML Shakespeare Generator</p>
+          <p className="self-start text-start text-sm italic">
+            Astro + Solidjs, Python3 + PyTorch for training
+          </p>
+          <p className="text-lg font-normal">
+            Custom-made ML model that speaks like shakespeare. Shows each step
+            of the training process.
+          </p>
+        </Link>
         <Link href={"https://www.useswiftcode.com"} className={cardClasses}>
           <p>www.UseSwiftCode.com</p>
           <p className="self-start text-start text-sm italic">
@@ -62,7 +73,6 @@ export default function Projects() {
             />
           </div>
         </Link>
-        {/*  */}
         <Link
           href={"https://dex-swap-pied.vercel.app/"}
           className={cardClasses}
@@ -74,17 +84,6 @@ export default function Projects() {
           <p className="text-lg font-normal">
             Connect your coinbase wallet and exchange one cryptocurrency for
             another.
-          </p>
-        </Link>
-        <Link href={"https://ml.useswiftcode.com/"} className={cardClasses}>
-          {" "}
-          <p>ML Shakespeare Generator</p>
-          <p className="self-start text-start text-sm italic">
-            Astro + Solidjs, python
-          </p>
-          <p className="text-lg font-normal">
-            Custom-made ML model that speaks like shakespeare. Functional, but
-            improvements are still in progress.
           </p>
         </Link>
         <div className={cardClasses}>
