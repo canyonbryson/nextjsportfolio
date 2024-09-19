@@ -77,7 +77,7 @@ const MobileNav = () => {
           />
 
           <p className="h2-bold text-dark100_light900 font-spaceGrotesk">
-            Dev <span className="text-primary-500">Overflow</span>
+            My <span className="text-primary-500">Portfolio</span>
           </p>
         </Link>
         <div className="no-scrollbar flex grow flex-col justify-between overflow-y-auto">
