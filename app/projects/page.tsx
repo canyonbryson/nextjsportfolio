@@ -29,7 +29,7 @@ export default function Projects() {
           {" "}
           <p>ML Shakespeare Generator</p>
           <p className="self-start text-start text-sm italic">
-            Astro + Solidjs, Python3 + PyTorch for training
+            Astro + Solidjs, Python3 + PyTorch
           </p>
           <p className="text-lg font-normal">
             Custom-made ML model that speaks like shakespeare. Shows each step
