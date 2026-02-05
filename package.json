@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate:resume": "node scripts/generate-resume-pdf.mjs"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-menubar": "^1.1.1",
@@ -23,8 +25,7 @@
     "react-hook-form": "^7.53.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
-    "zod": "^3.23.8",
-    "@hookform/resolvers": "^3.9.0"
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^22.5.4",
@@ -33,6 +34,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.8",
     "eslint-plugin-tailwindcss": "^3.17.4",
+    "md-to-pdf": "^5.2.5",
     "tailwindcss": "^3.4.10",
     "typescript": "^5"
   }

@@ -23,7 +23,7 @@ const experience = [
   {
     role: "Lead Engineer",
     company: "ORTHOATHLETE",
-    period: "2023 – Present",
+    period: "2024 – Present",
     highlights: [
       "Built INJURED: AI-powered recovery platform across web + mobile",
       "Shipped OrthoHCP video interviewer in 30 days from zero to production",
@@ -34,7 +34,7 @@ const experience = [
   {
     role: "Road Rally Developer",
     company: "Riddler Road Rally",
-    period: "2023",
+    period: "2024",
     highlights: [
       "Sole developer for interactive scavenger hunt platform",
       "Built web app (Astro + SolidJS) and mobile app (React Native)",
@@ -44,7 +44,7 @@ const experience = [
   {
     role: "AIDIA Developer",
     company: "AIDIA",
-    period: "2021 – 2023",
+    period: "2022 – 2024",
     highlights: [
       "Full-stack development across React, Astro, and SolidJS",
       "Built custom image recognition systems and mobile apps",
@@ -54,7 +54,7 @@ const experience = [
   {
     role: "USU Networking Developer",
     company: "Utah State University",
-    period: "2020 – 2021",
+    period: "2023 – 2024",
     highlights: [
       "Built internal tools using Django, React, and Next.js",
       "Developed software for the networking team",
@@ -64,7 +64,7 @@ const experience = [
   {
     role: "Freelance Developer",
     company: "Independent",
-    period: "2018 – Present",
+    period: "2022 – Present",
     highlights: [
       "Delivered client-facing web apps and automation tools",
       "Owned discovery, build, and delivery for small teams",

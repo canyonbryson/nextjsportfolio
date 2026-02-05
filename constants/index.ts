@@ -47,7 +47,7 @@ export const proofChips = [
 
 export const socialLinks = {
   github: "https://github.com/canyonbryson",
-  linkedin: "https://linkedin.com/in/canyonbryson",
+  linkedin: "https://www.linkedin.com/in/canyon-bryson-025815250/",
   email: "mailto:canyonbryson@gmail.com",
 };
 
