@@ -1,7 +1,6 @@
 "use client";
 
 import { useTheme } from "@/context/ThemeProvider";
-
 import {
   Menubar,
   MenubarContent,
@@ -10,7 +9,6 @@ import {
   MenubarTrigger,
 } from "@/components/ui/menubar";
 import { themes } from "@/constants";
-import Image from "next/image";
 
 const Theme = () => {
   const { theme, setTheme } = useTheme();
@@ -18,31 +16,46 @@ const Theme = () => {
   return (
     <Menubar className="relative border-none bg-transparent shadow-none">
       <MenubarMenu>
-        <MenubarTrigger className="rounded hover:cursor-pointer hover:bg-light-700 data-[state=open]:bg-light-900 dark:hover:bg-dark-400 dark:data-[state=open]:bg-dark-200">
+        <MenubarTrigger className="rounded-md p-2 hover:cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800">
           {theme === "light" ? (
-            <Image
-              src="/assets/icons/sun.svg"
-              alt="sun"
-              width={20}
-              height={20}
-              className="active-theme"
-            />
+            <svg
+              className="h-5 w-5 text-gray-600 dark:text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+              />
+            </svg>
           ) : (
-            <Image
-              src="/assets/icons/moon.svg"
-              alt="moon"
-              width={20}
-              height={20}
-              className="active-theme"
-            />
+            <svg
+              className="h-5 w-5 text-gray-600 dark:text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+              />
+            </svg>
           )}
         </MenubarTrigger>
-        <MenubarContent className="absolute -right-12 mt-3 min-w-[120px] rounded border bg-light-900 py-2 dark:border-dark-400 dark:bg-dark-300">
+        <MenubarContent 
+          side="top"
+          align="end"
+          className="min-w-[120px] rounded-md border border-gray-200 bg-white py-1 shadow-lg dark:border-gray-700 dark:bg-gray-900"
+        >
           {themes.map((item) => (
-            // @ts-ignore
             <MenubarItem
               key={item.value}
-              className="flex items-center gap-4 px-2.5 py-2 hover:cursor-pointer focus:bg-light-700 dark:focus:bg-dark-400"
+              className="flex cursor-pointer items-center gap-3 px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800"
               onClick={() => {
                 setTheme(item.value);
                 if (item.value !== "system") {
@@ -52,18 +65,60 @@ const Theme = () => {
                 }
               }}
             >
-              <Image
-                src={item.icon}
-                alt={item.value}
-                width={16}
-                height={16}
-                className={`${theme === item.value && "active-theme"}`}
-              />
-              <p
-                className={`body-semibold text-light-500 ${theme === item.value ? "text-primary-500" : "text-dark100_light900"}`}
+              <span
+                className={`${theme === item.value ? "text-accent" : "text-gray-600 dark:text-gray-400"}`}
+              >
+                {item.value === "light" && (
+                  <svg
+                    className="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                    />
+                  </svg>
+                )}
+                {item.value === "dark" && (
+                  <svg
+                    className="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                    />
+                  </svg>
+                )}
+                {item.value === "system" && (
+                  <svg
+                    className="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                )}
+              </span>
+              <span
+                className={`${theme === item.value ? "font-medium text-accent" : "text-gray-700 dark:text-gray-300"}`}
               >
                 {item.label}
-              </p>
+              </span>
             </MenubarItem>
           ))}
         </MenubarContent>

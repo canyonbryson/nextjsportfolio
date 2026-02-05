@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+  <!-- Background gradient -->
+  <rect width="1920" height="1080" fill="#0f172a"/>
+  
+  <!-- Floor -->
+  <rect x="0" y="700" width="1920" height="380" fill="#1e293b"/>
+  
+  <!-- Floor grid pattern -->
+  <g stroke="#334155" stroke-width="1">
+    <line x1="0" y1="750" x2="1920" y2="750"/>
+    <line x1="0" y1="850" x2="1920" y2="850"/>
+    <line x1="0" y1="950" x2="1920" y2="950"/>
+    <line x1="240" y1="700" x2="120" y2="1080"/>
+    <line x1="480" y1="700" x2="360" y2="1080"/>
+    <line x1="720" y1="700" x2="600" y2="1080"/>
+    <line x1="960" y1="700" x2="960" y2="1080"/>
+    <line x1="1200" y1="700" x2="1320" y2="1080"/>
+    <line x1="1440" y1="700" x2="1560" y2="1080"/>
+    <line x1="1680" y1="700" x2="1800" y2="1080"/>
+  </g>
+  
+  <!-- Back wall -->
+  <rect x="0" y="200" width="1920" height="500" fill="#1e293b"/>
+  
+  <!-- Office window (left) -->
+  <rect x="100" y="250" width="300" height="400" rx="5" fill="#0f172a" stroke="#334155" stroke-width="4"/>
+  <line x1="250" y1="250" x2="250" y2="650" stroke="#334155" stroke-width="4"/>
+  <line x1="100" y1="450" x2="400" y2="450" stroke="#334155" stroke-width="4"/>
+  <!-- Window glow -->
+  <rect x="105" y="255" width="140" height="190" fill="#1e3a5f" opacity="0.5"/>
+  <rect x="255" y="255" width="140" height="190" fill="#1e3a5f" opacity="0.5"/>
+  
+  <!-- Office window (right) -->
+  <rect x="1520" y="250" width="300" height="400" rx="5" fill="#0f172a" stroke="#334155" stroke-width="4"/>
+  <line x1="1670" y1="250" x2="1670" y2="650" stroke="#334155" stroke-width="4"/>
+  <line x1="1520" y1="450" x2="1820" y2="450" stroke="#334155" stroke-width="4"/>
+  <!-- Window glow -->
+  <rect x="1525" y="255" width="140" height="190" fill="#1e3a5f" opacity="0.5"/>
+  <rect x="1675" y="255" width="140" height="190" fill="#1e3a5f" opacity="0.5"/>
+  
+  <!-- Center decoration - company logo placeholder -->
+  <circle cx="960" cy="400" r="100" fill="#334155" stroke="#475569" stroke-width="4"/>
+  <text x="960" y="415" font-family="system-ui" font-size="48" font-weight="bold" fill="#64748b" text-anchor="middle">VS</text>
+  
+  <!-- Ceiling lights -->
+  <rect x="400" y="100" width="200" height="20" rx="5" fill="#475569"/>
+  <rect x="420" y="120" width="160" height="80" fill="#fef3c7" opacity="0.3"/>
+  
+  <rect x="860" y="100" width="200" height="20" rx="5" fill="#475569"/>
+  <rect x="880" y="120" width="160" height="80" fill="#fef3c7" opacity="0.3"/>
+  
+  <rect x="1320" y="100" width="200" height="20" rx="5" fill="#475569"/>
+  <rect x="1340" y="120" width="160" height="80" fill="#fef3c7" opacity="0.3"/>
+  
+  <!-- Ambient particles -->
+  <circle cx="200" cy="300" r="2" fill="#60a5fa" opacity="0.5"/>
+  <circle cx="500" cy="400" r="1.5" fill="#60a5fa" opacity="0.4"/>
+  <circle cx="1400" cy="350" r="2" fill="#60a5fa" opacity="0.5"/>
+  <circle cx="1700" cy="500" r="1.5" fill="#60a5fa" opacity="0.4"/>
+</svg>

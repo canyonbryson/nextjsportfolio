@@ -1,29 +1,28 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import FirstVisitGate from "@/components/FirstVisitGate";
+import MobileNav from "@/components/MobileNav";
 import Sidebar from "@/components/SideBar";
 import { ThemeProvider } from "@/context/ThemeProvider";
 import type { Metadata } from "next";
-// eslint-disable-next-line
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Inter } from "next/font/google";
 import React from "react";
 import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-inter",
 });
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-spaceGrotesk",
-});
-
 export const metadata: Metadata = {
-  title: "Portfolio | Canyon Bryson",
-  description: "Portfolio for Canyon Bryson",
-  // icons: {icon: "/favicon.ico", type: "image/x-icon"},
+  title: "Canyon Bryson | AI Engineer + Full-Stack Developer",
+  description:
+    "AI Engineer and Full-Stack Developer shipping production AI systems. 7 years experience, 6 projects shipped in the last year.",
+  openGraph: {
+    title: "Canyon Bryson | AI Engineer + Full-Stack Developer",
+    description:
+      "I write reuseable, pattern-based code that is easy to understand and maintain.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -32,21 +31,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${inter.className} ${spaceGrotesk.className} background-light850_dark100`}
-      >
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.variable} font-inter antialiased`}>
         <ThemeProvider>
-          <>
-            <Navbar />
-            <div className="flex">
-              <Sidebar />
-              <section className="flex min-h-screen flex-1 flex-col px-6 pb-40 pt-36 max-md:pb-14 sm:px-14">
-                <div className="mx-auto w-full max-w-5xl">{children}</div>
-              </section>
-            </div>
-            <Footer />
-          </>
+          <FirstVisitGate />
+          <div className="flex min-h-screen">
+            {/* Desktop Sidebar */}
+            <Sidebar />
+
+            {/* Mobile Navigation */}
+            <MobileNav />
+
+            {/* Main Content */}
+            <main className="flex-1 overflow-auto">
+              <div className="mx-auto w-full max-w-6xl px-6 py-12 pt-20 lg:px-10 lg:py-16 lg:pt-16">
+                {children}
+              </div>
+            </main>
+          </div>
         </ThemeProvider>
       </body>
     </html>

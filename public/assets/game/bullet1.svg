@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+  <!-- Bullet body -->
+  <ellipse cx="8" cy="8" rx="3" ry="6" fill="#FCD34D"/>
+  <!-- Highlight -->
+  <ellipse cx="7" cy="6" rx="1.5" ry="3" fill="#FEF3C7"/>
+  <!-- Glow effect -->
+  <ellipse cx="8" cy="8" rx="4" ry="7" fill="#FCD34D" opacity="0.3"/>
+</svg>

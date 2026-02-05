@@ -1,5 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from "tailwindcss";
+
+const config: Config = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
@@ -17,27 +18,47 @@ module.exports = {
     },
     extend: {
       colors: {
+        // Base grayscale
+        gray: {
+          50: "#fafafa",
+          100: "#f5f5f5",
+          200: "#e5e5e5",
+          300: "#d4d4d4",
+          400: "#a3a3a3",
+          500: "#737373",
+          600: "#525252",
+          700: "#404040",
+          800: "#262626",
+          900: "#171717",
+          950: "#0a0a0a",
+        },
+        // Single accent color (teal)
+        accent: {
+          DEFAULT: "#0891b2",
+          light: "#22d3ee",
+          dark: "#0e7490",
+        },
+        // Keep some legacy colors for transition
         primary: {
-          500: "#FF7000",
-          100: "#FFF1E6",
+          500: "#0891b2",
+          100: "#ecfeff",
         },
         dark: {
           100: "#000000",
-          200: "#0F1117",
-          300: "#151821",
-          400: "#212734",
-          500: "#101012",
+          200: "#0a0a0a",
+          300: "#171717",
+          400: "#262626",
+          500: "#0a0a0a",
         },
         light: {
           900: "#FFFFFF",
-          850: "#FDFDFD",
-          800: "#F4F6F8",
-          750: "#EDEFF1",
-          700: "#DCE3F1",
-          500: "#7B8EC8",
-          400: "#858EAD",
+          850: "#fafafa",
+          800: "#f5f5f5",
+          750: "#e5e5e5",
+          700: "#d4d4d4",
+          500: "#737373",
+          400: "#a3a3a3",
         },
-        "accent-blue": "#1DA1F2",
       },
       fontFamily: {
         inter: ["var(--font-inter)"],
@@ -50,22 +71,21 @@ module.exports = {
         "light-300": "-10px 10px 20px 0px rgba(218, 213, 213, 0.10)",
         "dark-100": "0px 2px 10px 0px rgba(46, 52, 56, 0.10)",
         "dark-200": "2px 0px 20px 0px rgba(39, 36, 36, 0.04)",
-      },
-      backgroundImage: {
-        "auth-dark": "url('/assets/images/auth-dark.png')",
-        "auth-light": "url('/assets/images/auth-light.png')",
+        card: "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+        "card-hover":
+          "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
       },
       screens: {
         xs: "420px",
       },
       keyframes: {
         "accordion-down": {
-          from: { height: 0 },
+          from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
+          to: { height: "0" },
         },
       },
       animation: {
@@ -76,3 +96,5 @@ module.exports = {
   },
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 };
+
+export default config;

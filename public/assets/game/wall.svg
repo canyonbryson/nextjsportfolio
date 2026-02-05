@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" fill="none">
+  <!-- Wall base -->
+  <rect x="0" y="10" width="200" height="30" rx="4" fill="#374151"/>
+  <!-- Wall top -->
+  <rect x="0" y="5" width="200" height="15" rx="4" fill="#4B5563"/>
+  <!-- Bricks pattern -->
+  <rect x="5" y="20" width="30" height="15" rx="2" fill="#6B7280"/>
+  <rect x="40" y="20" width="30" height="15" rx="2" fill="#6B7280"/>
+  <rect x="75" y="20" width="30" height="15" rx="2" fill="#6B7280"/>
+  <rect x="110" y="20" width="30" height="15" rx="2" fill="#6B7280"/>
+  <rect x="145" y="20" width="30" height="15" rx="2" fill="#6B7280"/>
+  <rect x="180" y="20" width="15" height="15" rx="2" fill="#6B7280"/>
+  <!-- Top highlight -->
+  <rect x="2" y="7" width="196" height="4" rx="2" fill="#9CA3AF"/>
+</svg>

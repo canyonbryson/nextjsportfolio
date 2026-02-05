@@ -1,87 +1,142 @@
-import Spline from "@splinetool/react-spline/next";
-import Image from "next/image";
+import ProjectCard from "@/components/ProjectCard";
+import { featuredProjects, archiveProjects } from "@/constants/projects";
 import Link from "next/link";
 
+const tradingCards = [
+  {
+    index: "01 / 04",
+    title: "Competitive Advantage",
+    oneLiner: "Computational Math Major",
+    bullets: [
+      "Creative Problem Solving",
+      "Pattern Recognition",
+      "Abstract Reasoning",
+      "Logical Deduction",
+      "Attention to Detail",
+    ],
+    cons: ["I'm a nerd", "Will point out logical inconsistencies"],
+  },
+  {
+    index: "02 / 04",
+    title: "High Level Vision",
+    oneLiner: "I try to get at the why",
+    bullets: [
+      "Good Software allows for Growth, High Margins, and Retention",
+      "30-50% of Software Cost is from Rework",
+      "Technical Debt must be paid off",
+    ],
+    cons: ["May not understand assumptions", "Will question the why"],
+  },
+  {
+    index: "03 / 04",
+    title: "Programming Philosophy",
+    oneLiner: "Rely on repeatable and robust patterns",
+    bullets: [
+      "Abstracted code reduces uncertainty and rework",
+      "Repeatable code reduces the surface area",
+      "Reusable code is easier to test and debug",
+    ],
+    cons: ["Allergic to vague requirements", "Will add types"],
+  },
+  {
+    index: "04 / 04",
+    title: "AI Integration",
+    oneLiner: "AI is amazing at following patterns",
+    bullets: [
+      "Meticulously define constraints + guardrails",
+      "Provide robust patterns to follow",
+      "Consistently evaluate outputs",
+      "Adjust prompts and rules whenever AI misperforms",
+    ],
+    cons: ["Doesn't fully trust AI", "Will repeat a task to test AI models"],
+  },
+  
+];
+
+
 export default function Home() {
-  const cardClasses =
-    "background-light750_dark300 max-w-80 min-h-52 hover:cursor-pointer hover:border-black hover:dark:border-white text-dark300_light700 body-regular mt-4 rounded-lg border border-light-500 p-3 text-center text-2xl dark:border-dark-400 max-sm:mx-0 max-sm:text-left";
   return (
-    <div className="h- z-10 flex flex-col items-center p-0">
-      <h1 className="text-dark100_light900 h1-bold z-10 mb-6">
-        Portfolio Overview
-      </h1>
-      <Image
-        src="/assets/images/profile.jpg"
-        className="z-10 mb-4 rounded-full"
-        width={180}
-        height={180}
-        alt="me"
-      />
-      <div className="z-10 flex w-full flex-row flex-wrap items-center gap-8">
-        <Link href={"/education"} className={cardClasses}>
-          <p className="font-bold">Education</p>
-          <p>Bachelor&apos;s of Science in Computational Math and CS minor</p>
-        </Link>
-        <Link href={"/experience"} className={cardClasses}>
-          <p className="font-bold">Experience</p>
-          <p>4+ years of professional full-stack development experience</p>
-        </Link>
-        <Link href={"/experience"} className={cardClasses}>
-          <p className="font-bold">Most Recent Job</p>
-          <p className="self-start text-start text-sm italic">
-            Astro + Solidjs, Serverless AWS, Typescript, React native
-          </p>
-          <p>Lead and Sole Developer for Riddler Road Rally.</p>
-        </Link>
-        <Link href={"/skills"} className={cardClasses}>
-          <p className="font-bold">Top Skills</p>
-          <p>React/Next.js in Typescript, TailwindCSS, AWS, DynamoDB</p>
-        </Link>
-        <Link href={"https://ml.useswiftcode.com/"} className={cardClasses}>
-          {" "}
-          <p className="font-bold">Personal Project: Shakespeare ML Model</p>
-          <p className="self-start text-start text-sm italic">
-            Astro + Solidjs, Python3 + PyTorch for training
-          </p>
-          <p className="text-lg font-normal">
-            Custom-made ML model that speaks like shakespeare. Shows each step
-            of the training process.
-          </p>
-        </Link>
-        <Link href={"https://www.useswiftcode.com"} className={cardClasses}>
-          <p className="font-bold">Personal Project: AI Builder</p>
-          <p className="self-start text-start text-sm italic">
-            Astro + Solidjs, SST, Typescript
-          </p>
-          <p>Custom AI Assistant Builder + Chatbot + Automator</p>
-        </Link>
-        <Link
-          href={"https://dex-swap-pied.vercel.app/"}
-          className={cardClasses}
-        >
-          <p className="font-bold">Personal Project: DEX Swap</p>
-          <p className="self-start text-start text-sm italic">
-            Next.js, Typescript
-          </p>
-          <p>Connect your coinbase wallet and exchange cryptocurrencies.</p>
-        </Link>
-        <Link
-          href={"https://nextjs-technical-blog.vercel.app/"}
-          className={cardClasses}
-        >
-          <p className="font-bold">Personal Blog</p>
-          <p className="self-start text-start text-sm italic">
-            Next.js, Markdown, Typescript
-          </p>
-          <p>Technical Blog following my learning progression.</p>
-        </Link>
-      </div>
-      <div className="fixed z-[5] size-full bg-white opacity-35 dark:bg-black"></div>
-      <div className="fixed z-0 size-full">
-        <div className="absolute z-0 size-full">
-          <Spline scene="https://prod.spline.design/RwYhjBfvJE1VmqcF/scene.splinecode" />
+    <div className="space-y-20">
+      {/* Hero Section */}
+      <section className="space-y-10">
+        <h1 className="h1-hero">AI Engineer + Full Stack Developer</h1>
+        <p className="body-large max-w-2xl">Lead Engineer at ORTHOATHLETE</p>
+        {/* <div className="flex flex-wrap gap-3">
+          <Link href="/projects" className="btn-primary">
+            View flagship projects
+          </Link>
+          <a href="/resume.pdf" download className="btn-secondary">
+            Download resume
+          </a>
+        </div> */}
+      </section>
+
+      {/* Trading Cards */}
+      <section className="-mx-6 px-6 lg:-mx-8 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-6 md:grid-cols-2">
+          {tradingCards.map((card) => (
+            <article
+              key={card.index}
+              className="card flex flex-col"
+            >
+              <span className="card-index">{card.index}</span>
+              <h3 className="h2-card mt-3">{card.title}</h3>
+              
+              <p className="h3-card mt-2">{card.oneLiner}</p>
+              <ul className="mt-6 flex-1 space-y-3">
+                {card.bullets.map((bullet, i) => (
+                  <li
+                    key={i}
+                    className="flex items-start gap-3 text-base text-gray-700 dark:text-gray-300"
+                  >
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
+                    {bullet}
+                  </li>
+                ))}
+              </ul>
+              <div className="cons-strip">
+                <span className="text-gray-400 dark:text-gray-600">Cons:</span>{" "}
+                {card.cons.map((con, i) => (
+                  <span key={i} className="cons-chip">
+                    {con}
+                    {i < card.cons.length - 1 && " · "}
+                  </span>
+                ))}
+              </div>
+            </article>
+          ))}
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* Featured Projects */}
+      <section className="space-y-6">
+        <h2 className="h2-section">Featured Projects</h2>
+        <div className="grid gap-6 md:grid-cols-1">
+          {featuredProjects.map((project) => (
+            <ProjectCard key={project.slug} project={project} featured />
+          ))}
+        </div>
+      </section>
+
+      {/* Project Archive Preview */}
+      <section className="space-y-4">
+        <div className="flex items-center justify-between">
+          <h2 className="h2-section">More Projects</h2>
+          <Link
+            href="/projects"
+            className="text-sm font-medium text-accent hover:underline"
+          >
+            View all {archiveProjects.length + featuredProjects.length}+ projects →
+          </Link>
+        </div>
+        <p className="body-base">
+          Beyond the flagship projects above, I&apos;ve built healthcare data
+          pipelines, sports analytics tools, mobile apps, and experimental ML
+          demos.
+        </p>
+      </section>
     </div>
   );
 }

@@ -6,76 +6,50 @@ export const themes = [
   { value: "system", label: "System", icon: "/assets/icons/computer.svg" },
 ];
 
-export const sidebarLinks: SidebarLink[] = [
+export const primaryLinks: SidebarLink[] = [
   {
-    imgURL: "/assets/icons/home.svg",
     route: "/",
     label: "Home",
   },
   {
-    imgURL: "/assets/icons/projects.svg",
     route: "/projects",
     label: "Projects",
-    width: 25,
-    height: 25,
   },
   {
-    imgURL: "/assets/icons/suitcase.svg",
-    route: "/experience",
-    label: "Experience",
-  },
-  {
-    imgURL: "/assets/icons/tag.svg",
-    route: "/skills",
-    label: "Skills",
-  },
-  {
-    imgURL: "/assets/icons/education.svg",
-    route: "/education",
-    label: "Education",
-    width: 20,
-    height: 20,
-  },
-  {
-    imgURL: "/assets/icons/user.svg",
     route: "/about",
     label: "About",
-    width: 20,
-    height: 20,
   },
   {
-    imgURL: "/assets/icons/message.svg",
-    route: "/contact",
-    label: "Message Me",
-    width: 20,
-    height: 20,
+    route: "/resume",
+    label: "Resume",
   },
 ];
 
-export const BADGE_CRITERIA = {
-  QUESTION_COUNT: {
-    BRONZE: 10,
-    SILVER: 50,
-    GOLD: 100,
+export const gameLinks: SidebarLink[] = [
+  {
+    route: "/games/tower",
+    label: "Tower Defense",
   },
-  ANSWER_COUNT: {
-    BRONZE: 10,
-    SILVER: 50,
-    GOLD: 100,
+  {
+    route: "/games/jrpg",
+    label: "JRPG Boss Fight",
   },
-  QUESTION_UPVOTES: {
-    BRONZE: 10,
-    SILVER: 50,
-    GOLD: 100,
-  },
-  ANSWER_UPVOTES: {
-    BRONZE: 10,
-    SILVER: 50,
-    GOLD: 100,
-  },
-  TOTAL_VIEWS: {
-    BRONZE: 1000,
-    SILVER: 10000,
-    GOLD: 100000,
-  },
+];
+
+export const sidebarLinks: SidebarLink[] = [...primaryLinks, ...gameLinks];
+
+export const proofChips = [
+  "7 years experience",
+  "Computational math + CS degree",
+  "Lead Engineer at ORTHOATHLETE",
+  "OrthoHCP shipped in 30 days",
+];
+
+export const socialLinks = {
+  github: "https://github.com/canyonbryson",
+  linkedin: "https://linkedin.com/in/canyonbryson",
+  email: "mailto:canyonbryson@gmail.com",
 };
+
+// Legacy - kept for any remaining imports
+export const BADGE_CRITERIA = {};
