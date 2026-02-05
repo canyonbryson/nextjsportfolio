@@ -19,13 +19,14 @@ const tradingCards = [
   {
     index: "02 / 04",
     title: "High Level Vision",
-    oneLiner: "I try to get at the why",
+    oneLiner: "I understand the business perspective",
     bullets: [
-      "Good Software allows for Growth, High Margins, and Retention",
-      "30-50% of Software Cost is from Rework",
+      "Good software allows for viral growth, high margins, and low churn",
+      "30-50% of software cost is from rework",
       "Technical Debt must be paid off",
+      "Following good, reliable patterns is key",
     ],
-    cons: ["May not understand assumptions", "Will question the why"],
+    cons: ["May not understand assumptions", "Will question the \"why\""],
   },
   {
     index: "03 / 04",
@@ -58,17 +59,16 @@ export default function Home() {
   return (
     <div className="space-y-20">
       {/* Hero Section */}
-      <section className="space-y-10">
-        <h1 className="h1-hero">AI Engineer + Full Stack Developer</h1>
-        <p className="body-large max-w-2xl">Lead Engineer at ORTHOATHLETE</p>
-        {/* <div className="flex flex-wrap gap-3">
-          <Link href="/projects" className="btn-primary">
-            View flagship projects
-          </Link>
-          <a href="/resume.pdf" download className="btn-secondary">
-            Download resume
-          </a>
-        </div> */}
+      <section className="space-y-6">
+        <div className="space-y-3">
+          <h1 className="text-5xl font-bold tracking-tight text-gray-900 dark:text-white md:text-6xl lg:text-7xl">
+            Canyon Bryson
+          </h1>
+          <h2 className="text-2xl font-medium text-gray-600 dark:text-gray-400 md:text-3xl lg:text-4xl">
+            AI Engineer + Full Stack Developer
+          </h2>
+        </div>
+        <p className="body-large max-w-2xl">Current Position: Lead Engineer at ORTHOATHLETE</p>
       </section>
 
       {/* Trading Cards */}
