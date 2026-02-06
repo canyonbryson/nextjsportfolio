@@ -21,9 +21,9 @@ export type EnemyDef = {
 // First-visit gate copy
 export const firstVisitGateCopy = {
   name: "Canyon Bryson",
-  loadingText: "Loading resumé... counting side projects... allocating RAM...",
+  loadingText: "Loading Resume... counting side projects... allocating RAM...",
   errorText: "ERROR: Candidate is too interesting. Launching games instead...",
-  towerButton: "Resumé Defense",
+  towerButton: "Resume Defense",
   jrpgButton: "Streetfight Interviewer",
   portfolioButton: "View Portfolio",
 };
@@ -33,7 +33,7 @@ export const firstVisitGateCopy = {
 export const gameFallbackCopy = {
   missingWaveTitle: "Wave data missing",
   missingWaveBody: "No wave details available. Try reloading or play again.",
-  missingEnemies: "No resumé items detected. Too perfect?",
+  missingEnemies: "No Resume items detected. Too perfect?",
   missingAttack: "The recruiter is thinking...",
   missingResponses: "No responses loaded. The candidate is speechless.",
   genericError: "Something glitched. Refresh and try again.",
@@ -65,9 +65,9 @@ export const towerDefensePlacement = {
 // Mission briefing copy
 export const towerDefenseMission = {
   title: "MISSION BRIEFING",
-  mission: "Defend your job position from the candidate's resumé",
+  mission: "Defend your job position from the candidate's Resume",
   subtitle: "A highly qualified candidate is approaching with impressive credentials...",
-  warning: "Do not let resumé items reach your defenses!",
+  warning: "Do not let Resume items reach your defenses!",
   startButton: "BEGIN DEFENSE",
 };
 
@@ -93,7 +93,7 @@ export const towerDefenseTowers: TowerDef[] = [
 ];
 
 
-// Enemy (resumé item) definitions
+// Enemy (Resume item) definitions
 export const towerDefenseEnemies: EnemyDef[] = [
   // Wave 1: Candidate Strengths (true + specific)
   { id: "comp-math-cs", label: "Computational Math + CS Degree", hitText: "Math? We need 'vision'." },
