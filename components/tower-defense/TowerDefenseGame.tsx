@@ -324,23 +324,34 @@ const TowerDefenseGame = () => {
       gameStateRef.current.mouseY = e.clientY;
     };
 
-    const handleClick = (e: MouseEvent) => {
+    const handlePointerFire = (clientX: number, clientY: number) => {
       const state = gameStateRef.current;
       if (!state) return;
 
+      state.mouseX = clientX;
+      state.mouseY = clientY;
+
       if (state.phase === "placeWall" || state.phase === "placeGun") {
-        handlePlacementClick(e.clientX, e.clientY);
+        handlePlacementClick(clientX, clientY);
       } else if (state.phase === "playing") {
         if (performance.now() < state.suppressFireUntil) return;
+        const turretX = dimensions.width / 2;
+        const turretY = dimensions.height - TURRET_Y_OFFSET;
+        const angle = Math.atan2(clientY - turretY, clientX - turretX);
+        state.turretAngle = angle > 0 ? (clientX > turretX ? -0.1 : -Math.PI + 0.1) : angle;
         fireBullet();
       }
     };
 
+    const handlePointerDown = (e: PointerEvent) => {
+      handlePointerFire(e.clientX, e.clientY);
+    };
+
     window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("click", handleClick);
+    window.addEventListener("pointerdown", handlePointerDown);
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("click", handleClick);
+      window.removeEventListener("pointerdown", handlePointerDown);
     };
   }, [fireBullet, handlePlacementClick]);
 
