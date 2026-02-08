@@ -62,6 +62,26 @@ const experience = [
     ],
   },
   {
+    role: "USU BioTech Research Assistant",
+    company: "Utah State University",
+    period: "2020 – 2023",
+    highlights: [
+      "Developed a 3d printed ChemoStat using a raspberry pi and a various sensors to measure the pH, temperature, and syphon rate of a solution",
+      "Developed hands-on science projects for students, such as:",
+      "- A programmable 3D printed prosthetic hand (not useful as a prosthetic)",
+      "-A mini bioreactor out of a mason jar and Arduino",
+    ],
+  },
+  {
+    role: "USU Water Quality Research Assistant",
+    company: "Utah State University",
+    period: "2021",
+    highlights: [
+      "Developed prgammable solutions for water quality monitoring and analysis",
+      "Programmed raspberry pis, arduinos, and developed PCBs and sensors",
+    ],
+  },
+  {
     role: "Freelance Developer",
     company: "Independent",
     period: "2022 – Present",
