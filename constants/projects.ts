@@ -189,6 +189,16 @@ export const projects: Project[] = [
     category: "ai",
   },
   {
+    slug: "mood-tracker",
+    title: "MOOd Tracker",
+    tagline: "Cow-themed mood and habit tracker for my wife",
+    proofLine: "Flutter app that analyzes habits to identify causes of mood changes.",
+    role: "Developer",
+    stack: ["Flutter", "TypeScript"],
+    links: { },
+    category: "experiment",
+  },
+  {
     slug: "dex-swap",
     title: "DEX Swap",
     tagline: "Crypto exchange website",

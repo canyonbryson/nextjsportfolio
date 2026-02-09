@@ -135,7 +135,8 @@ export const towerDefenseEnemies: EnemyDef[] = [
   { id: "road-rally", label: "Road Rally (puzzle/riddle mobile game)", hitText: "A game? Not productive. (It’s productive.)" },
 
   { id: "shakespeare", label: "Shakespeare AI Model (trained from scratch)", hitText: "From scratch?? That’s illegal." },
-  { id: "dex-swap", label: "DEX Swap (crypto exchange website)", hitText: "Crypto? Red flag. Also… impressive. Dang it." },
+  { id: "dex-swap", label: "DEX Swap (crypto exchange website)", hitText: "Crypto? Red flag." },
+  { id: "mood-tracker", label: "Mood Tracker (cow-themed mood and habit tracker)", hitText: "Cow-themed? That’s cute." },
 
   { id: "useswiftcode", label: "UseSwiftCode AI (personal assistant)", hitText: "Another assistant?" },
 
@@ -206,6 +207,7 @@ export const towerDefenseWaves: WaveDef[] = [
       "road-rally",
       "shakespeare",
       "dex-swap",
+      "mood-tracker",
       "useswiftcode",
       "blog",
       "portfolio",
