@@ -129,6 +129,16 @@ export const projects: Project[] = [
     category: "ai",
   },
   {
+    slug: "loan-origination",
+    title: "Loan Orignator Service",
+    tagline: "Exploring Kotlin, Kafka, and Spring Boot",
+    proofLine: "Tested out microservice architecture with Kotlin, Kafka, and Spring Boot",
+    role: "Developer",
+    stack: ["Kotlin/Java", "Kafka", "Spring Boot", "Microservices"],
+    links: { demo: "https://github.com/canyonbryson/loan-origination" },
+    category: "experiment",
+  },
+  {
     slug: "road-rally",
     title: "Road Rally",
     tagline: "Interactive scavenger hunt app",
@@ -157,6 +167,16 @@ export const projects: Project[] = [
     stack: ["Computer vision", "ML", "Electron", "Javascript", "Automation"],
     links: {},
     category: "ai",
+  },
+  {
+    slug: "pocketmonsters",
+    title: "Pocket Monsters",
+    tagline: "Nuxt + Vue exploration project",
+    proofLine: "Tested out Nuxt + Vue",
+    role: "Developer",
+    stack: ["Nuxt", "Vue", "Web app", "SPA"],
+    links: { demo: "https://pocketmonsters.vercel.app" },
+    category: "experiment",
   },
   {
     slug: "rec-center",

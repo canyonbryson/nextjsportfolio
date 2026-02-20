@@ -128,6 +128,9 @@ export const towerDefenseEnemies: EnemyDef[] = [
   { id: "boat", label: "Boat Project (event-driven task manager)", hitText: "Event-driven? Sir this is a spreadsheet." },
   { id: "worm", label: "Worm Project (image recognition)", hitText: "Computer vision? We wanted CRUD." },
 
+  { id: "pocketmonsters", label: "Pocket Monsters (Nuxt + Vue exploration)", hitText: "Nuxt + Vue? That’s cute." },
+  { id: "loan-origination", label: "Loan Orignator Service (Kotlin + Kafka exploration)", hitText: "Kotlin? Too new." },
+
   { id: "rec-center", label: "Rec Center (season scheduling)", hitText: "Scheduling apps are deceptively hard. Don’t say that." },
   { id: "food-storage", label: "Food Storage (planning/tracking)", hitText: "Wait… a practical app? Unacceptable." },
 
@@ -201,6 +204,8 @@ export const towerDefenseWaves: WaveDef[] = [
       "gameface",
       "boat",
       "worm",
+      "pocketmonsters",
+      "loan-origination",
       "rec-center",
       "food-storage",
       "askdb",
