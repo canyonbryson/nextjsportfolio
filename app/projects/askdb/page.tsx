@@ -153,6 +153,31 @@ export default function AskDBCaseStudy() {
         </div>
       </header>
 
+      {/* Demo CTA Card */}
+      <div className="card border-accent/20 bg-gradient-to-br from-accent/5 to-accent/10">
+        <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:justify-between sm:text-left">
+          <div className="space-y-1">
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              Try the Demo
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              Query a database in plain English
+            </p>
+          </div>
+          <a
+            href="https://askdb.useswiftcode.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary inline-flex items-center gap-2 whitespace-nowrap"
+          >
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            Open AskDB
+          </a>
+        </div>
+      </div>
+
       {/* Main Content with TL;DR sidebar */}
       <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_320px]">
         <div className="space-y-10">

@@ -125,6 +125,8 @@ export const towerDefenseEnemies: EnemyDef[] = [
 
   { id: "gameface", label: "Gameface AI Automation (sales grading)", hitText: "Automating sales training… suspiciously useful." },
 
+  { id: "grocerybudget", label: "Grocery Budget (budgeting app)", hitText: "Budgeting app? We're not hiring for that." },
+
   { id: "boat", label: "Boat Project (event-driven task manager)", hitText: "Event-driven? Sir this is a spreadsheet." },
   { id: "worm", label: "Worm Project (image recognition)", hitText: "Computer vision? We wanted CRUD." },
 
@@ -202,6 +204,7 @@ export const towerDefenseWaves: WaveDef[] = [
       "orthoathlete",
       "orthopatient",
       "gameface",
+      "grocerybudget",
       "boat",
       "worm",
       "pocketmonsters",
